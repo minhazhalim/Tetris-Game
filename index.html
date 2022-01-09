@@ -6,242 +6,35 @@
      <meta name="viewport" content="width=device-width,initial-scale=1.0">
      <title>Tetris Game</title>
      <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
      <script src="script.js" defer></script>
 </head>
 <body>
-     <h3>score: <span id="score">0</span></h3>
-     <button type="button" id="start-button">start/pause</button>
-     <div class="container">
-          <div class="grid">
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div class="taken"></div>
-               <div class="taken"></div>
-               <div class="taken"></div>
-               <div class="taken"></div>
-               <div class="taken"></div>
-               <div class="taken"></div>
-               <div class="taken"></div>
-               <div class="taken"></div>
-               <div class="taken"></div>
-               <div class="taken"></div>
-          </div>
-          <div class="mini-grid">
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
+     <div class="menu-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+               <div class="menu-content">
+                    <h2 class="t-ucase">rules</h2>
+                    <p class="rules">please use the <b class="key">UP</b> key to rotate your tetromino, and <b class="key">left</b>and <b class="key">right</b> to <br> move across the board. pressing <b class="key">down</b> will speed up the tetromino.</p>
+                    <button type="button" class="close font-weight-400">x</button>
+               </div>
           </div>
      </div>
+     <header><h1 class="font-weight-300 t-ucase">welcome <br><span class="font-weight-400 t-wide t-big t-ucase">to tetris</span></h1></header>
+     <main class="game-area">
+          <div class="game"><div class="grid"></div></div>
+          <section>
+               <div class="display">
+                    <h1 class="score font-weight-400 t-ucase">your score <br> <span class="score-display t-ucase font-weight-300">0</span></h1>
+                    <div class="previous-shape"><div class="previous-grid"></div></div>
+                    <h2 class="lines-display font-weight-400 t-ucase">lines: <span class="lines-score">0</span></h2>
+               </div>
+               <button type="button" class="button t-ucase" href="#">start / pause</button>
+               <small class="footer t-ucase">made with love 2019</small>
+          </section>
+     </main>
 </body>
 </html>
